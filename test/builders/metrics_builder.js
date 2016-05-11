@@ -3,7 +3,7 @@ const metricsBuilder = require.main.require('./app/builders/metrics_builder');
 
 test('metric fields are filled', function (tape) {
     //arrange
-    var jsonData =
+    const jsonData =
         [
             {
                 cols: [
