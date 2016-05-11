@@ -1,13 +1,13 @@
 // require('log-timestamp');
-var argv = require('optimist')
+const argv = require('optimist')
     .usage('Usage: $0 --textbot or --slackbot')
     .default('slackbot', true)
     .describe('textbot', 'start a local bot on the command line')
     .describe('slackbot', 'start a bot which integrates with Slack')
     .argv;
 
-var textBot = require("./app/bots/textbot");
-var slackBot = require("./app/bots/slackbot");
+const textBot = require("./app/bots/textbot");
+const slackBot = require("./app/bots/slackbot");
 
 if (process.env.SONAR_API_HOST === undefined || process.env.SONAR_API_RESOURCE_KEY === undefined) {
     throw new Error("host or resourceKey cannot be empty");

@@ -1,6 +1,6 @@
-var http = require('http');
-var https = require('https');
-var urlparser = require('url');
+const http = require('http');
+const https = require('https');
+const urlparser = require('url');
 
 module.exports.getHttpContent = function (url) {
     return new Promise((resolve, reject) => {

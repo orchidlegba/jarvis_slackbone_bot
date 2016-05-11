@@ -1,7 +1,7 @@
-var builder = require('botbuilder');
-var timelineQuery = require.main.require('./app/queries/timeline_query');
-var promiseRequest =  require.main.require('./app/requests/promise_request');
-var metricsBuilder = require.main.require('./app/builders/metrics_builder');
+const builder = require('botbuilder');
+const timelineQuery = require.main.require('./app/queries/timeline_query');
+const promiseRequest =  require.main.require('./app/requests/promise_request');
+const metricsBuilder = require.main.require('./app/builders/metrics_builder');
 
 module.exports = new builder.CommandDialog()
     .matches('^(hello|hi|howdy|help)', builder.DialogAction.send("Nice to meet you"))
