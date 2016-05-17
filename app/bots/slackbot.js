@@ -1,6 +1,6 @@
-var Botkit = require('botkit');
-var builder = require('botbuilder');
-var dialogHandlers = require.main.require("./app/dialog_handlers/sonar_dialog");
+const Botkit = require('botkit');
+const builder = require('botbuilder');
+const dialogHandlers = require.main.require("./app/dialog_handlers/sonar_dialog");
 
 module.exports.runBot = function () {
   let controller = Botkit.slackbot();

@@ -1,4 +1,4 @@
-var Metric = require.main.require('./app/models/metric');
+const Metric = require.main.require('./app/models/metric');
 
 function buildMetricModelFromJsonNodeCell (cell) {
     let coverageValueMetric = cell.v[0];
