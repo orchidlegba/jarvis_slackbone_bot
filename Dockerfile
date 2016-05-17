@@ -1,4 +1,4 @@
-FROM node:6.1
+FROM node:6.1.0-slim
 
 # Create app directory
 RUN mkdir -p /usr/src/app
