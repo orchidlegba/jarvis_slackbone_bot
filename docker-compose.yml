@@ -7,4 +7,4 @@ jarvis-slackbot:
   environment:
     - "SONAR_API_HOST=https://nemo.sonarqube.org"
     - "SONAR_API_RESOURCE_KEY=org.codehaus.sonar-plugins:ebcdic-ascii-converter"
-    - "SLACK_API_TOKEN=palceholder-replace-me"
+    - "SLACK_API_TOKEN=placeholder"
